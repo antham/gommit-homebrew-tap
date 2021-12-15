@@ -2,24 +2,24 @@
 class Gommit < Formula
   desc ""
   homepage ""
-  version "2.4.0"
+  version "2.6.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/antham/gommit/releases/download/v2.4.0/gommit_2.4.0_darwin_amd64.tar.gz"
-    sha256 "5fc1d24859011ba51b862766c2d714b9beb32e7cf08da71aedacad72fc84dae9"
+    url "https://github.com/antham/gommit/releases/download/v2.6.0/gommit_2.6.0_darwin_amd64.tar.gz"
+    sha256 "eb63a1d449edc679244a937080cf08e0a7a491675c2f2f5c326e885b3b5b66f4"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/antham/gommit/releases/download/v2.4.0/gommit_2.4.0_linux_amd64.tar.gz"
-      sha256 "658c6b36661f058a82821da58cabc199579f38f04799e694366ca7bbd8196217"
+      url "https://github.com/antham/gommit/releases/download/v2.6.0/gommit_2.6.0_linux_amd64.tar.gz"
+      sha256 "054d05d7613c24079b5c2a9fda1673f7669064f5bc1971e9d8538fef40ddeb75"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/antham/gommit/releases/download/v2.4.0/gommit_2.4.0_linux_arm64.tar.gz"
-        sha256 "7a6253e4b8e89d2e9506339a8fe24b1d15180dcd46d62bb46ab4ca439dcfd35d"
+        url "https://github.com/antham/gommit/releases/download/v2.6.0/gommit_2.6.0_linux_arm64.tar.gz"
+        sha256 "545e70f57da2423087bcb5ee9a40c64be7cd0e1f9224f714ecb94f8860f110bc"
       else
-        url "https://github.com/antham/gommit/releases/download/v2.4.0/gommit_2.4.0_linux_armv6.tar.gz"
-        sha256 "c123f721025aecd9fa46085ded55484a9fe6738862f05484237a096a959862e7"
+        url "https://github.com/antham/gommit/releases/download/v2.6.0/gommit_2.6.0_linux_armv6.tar.gz"
+        sha256 "a956b9e91889c931d0887cce28b18f75bf1c42f42f4633419500853da821b98b"
       end
     end
   end
